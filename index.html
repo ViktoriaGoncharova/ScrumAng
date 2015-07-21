@@ -1,18 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <link href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css">
-  <link href="css/site.css" type="text/css">
+<html lang="en" ng-app="scrumApp">
+ <head>
+  <link href="bower_components/bootstrap/dist/css/bootstrap.css" type="text/css" rel="stylesheet">
+  <link href="app/css/site.css" type="text/css" rel="stylesheet">
   <meta charset="UTF-8">
-  <title></title>
-</head>
-<body>
-
-
-<script src="bower_components/jquery/dist/jquery.min.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<script src="bower_components/angular/angular.min.js"></script>
-<script src="bower_components/angular-route/angular-route.min.js"></script>
-<script src="bower_components/angular-resource/angular-resource.min.js"></script>
-</body>
+  <title>Welcome!</title>
+ </head>
+ <body ng-controller="BaseController">
+        <div ng-view></div>
+<!--
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+ -->
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-alpha1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.3/angular.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+        <script src="app/app.js"></script>
+ </body>
 </html>
